@@ -20,16 +20,14 @@ namespace Purple_Buzz.Controllers
 
             List<HomeSlider> homeSliders = await _context.HomeSliders.ToListAsync();
             List<HomeServices> homeServices = await _context.HomeServices.ToListAsync();
+            List<Recents> recents = await _context.Recents.ToListAsync();
 
             HomeVM model = new() {
 
                 HomeSliders= homeSliders,
                 HomeServices = homeServices,
+                Recents= recents
             };
-
-
-
-
 
             return View(model);
         }

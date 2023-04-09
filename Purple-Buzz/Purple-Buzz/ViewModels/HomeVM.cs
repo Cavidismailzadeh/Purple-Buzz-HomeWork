@@ -6,5 +6,7 @@ namespace Purple_Buzz.ViewModels
     {
         public List<HomeSlider> HomeSliders { get; set; }
         public List<HomeServices> HomeServices { get; set; }
+
+        public List<Recents> Recents { get; set; }
     }
 }

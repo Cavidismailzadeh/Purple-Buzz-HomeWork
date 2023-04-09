@@ -8,7 +8,11 @@ namespace Purple_Buzz.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<HomeSlider> HomeSliders { get; set; }
+     
         public DbSet<HomeServices> HomeServices { get; set; }
+
+        public DbSet<Recents> Recents { get; set; }
+
     }
 
 }
